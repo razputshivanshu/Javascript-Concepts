@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Data Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #007BFF;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    .code {
+      font-family: 'Courier New', Courier, monospace;
+      background: #f9f9f9;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript Data Types</h1>
+  <p>JavaScript has two main categories of data types:</p>
+  <ul>
+    <li><b>Primitive Data Types</b></li>
+    <li><b>Non-Primitive (Reference) Data Types</b></li>
+  </ul>
+
+  <h2>Primitive Data Types</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Number</td>
+        <td>Represents numerical values, both integers and floating-point numbers.</td>
+        <td><span class="code">let age = 25;</span></td>
+      </tr>
+      <tr>
+        <td>String</td>
+        <td>Represents a sequence of characters.</td>
+        <td><span class="code">let name = "John";</span></td>
+      </tr>
+      <tr>
+        <td>Boolean</td>
+        <td>Represents logical values: <i>true</i> or <i>false</i>.</td>
+        <td><span class="code">let isStudent = true;</span></td>
+      </tr>
+      <tr>
+        <td>Undefined</td>
+        <td>A variable that has been declared but not assigned a value.</td>
+        <td><span class="code">let x;</span></td>
+      </tr>
+      <tr>
+        <td>Null</td>
+        <td>Represents the intentional absence of any value.</td>
+        <td><span class="code">let y = null;</span></td>
+      </tr>
+      <tr>
+        <td>Symbol</td>
+        <td>Represents a unique and immutable value, often used as object keys.</td>
+        <td><span class="code">let sym = Symbol("unique");</span></td>
+      </tr>
+      <tr>
+        <td>BigInt</td>
+        <td>Used to represent numbers larger than <span class="code">Number.MAX_SAFE_INTEGER</span>.</td>
+        <td><span class="code">let big = 12345678901234567890n;</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Non-Primitive Data Types</h2>
+  <p>These data types are also called reference types and include:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Object</td>
+        <td>Represents a collection of key-value pairs.</td>
+        <td>
+          <span class="code">
+            let person = { name: "Alice", age: 30 };
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>Array</td>
+        <td>A special type of object used to store ordered collections.</td>
+        <td>
+          <span class="code">
+            let numbers = [1, 2, 3];
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>Function</td>
+        <td>A block of reusable code.</td>
+        <td>
+          <span class="code">
+            function greet() { return "Hello"; }
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="index.js"></script>
+</body>
+
+</html>
